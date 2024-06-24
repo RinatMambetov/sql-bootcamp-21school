@@ -226,7 +226,7 @@ VALUES (19, 9, 18, '2022-01-09');
 INSERT INTO person_order
 VALUES (20, 9, 6, '2022-01-10');
 
--- added myself
+-- added from myself
 
 INSERT INTO menu
 VALUES ((SELECT MAX(id) + 1 FROM menu), (SELECT id FROM pizzeria WHERE name = 'Dominos'), 'sicilian pizza', 900);
